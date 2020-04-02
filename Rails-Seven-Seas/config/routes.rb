@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   # #  post '/seas', to: "seas#create"
   # #  put '/seas/:id', to: "seas#update"
   # # delete '/seas/:id', to: 'seas#destroy'
+  get '/', to: 'seas#welcome'
 end

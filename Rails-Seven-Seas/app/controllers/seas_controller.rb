@@ -1,5 +1,8 @@
 class SeasController < ApplicationController
   #define your controller actions here
+  def welcome
+    render :welcome
+  end
   def index 
     @seas = Sea.all 
   end 

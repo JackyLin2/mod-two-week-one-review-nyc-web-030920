@@ -2,8 +2,17 @@ class SeasController < ApplicationController
   #define your controller actions here
   def index 
     @seas = Sea.all 
-  
   end 
+  def show
+    @sea = Sea.find(params[:id])
+  end
+  def new
+    @sea = Sea.new
+  end
+  def create
+    @sea = Sea.create(sea_params)
+    redirect_to "/seas/#{@sea.id}"
+  end
   
 
 
